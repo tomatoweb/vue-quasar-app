@@ -19,9 +19,9 @@ quasar dev
 ```bash
 quasar build
 
-the build is in dist/spa
-the "dist" is in the .gitignore, so it will be pulled on server.
-So, you don't need to build on server, just git pull
+// the build is in dist/spa
+// the "dist" is in the .gitignore, so it will be pulled on server.
+// So, you don't need to build on server, just git pull
 ```
 ### NGINX configuration for production for vuejs must have try_files $uri $uri/ /index.html;
 ```bash
