@@ -24,6 +24,7 @@ quasar build
 // So, you don't need to build on server, just git pull
 ```
 ### NGINX configuration for production for vuejs must have try_files $uri $uri/ /index.html;
+https://router.vuejs.org/guide/essentials/history-mode.html#nginx
 ```bash
 
 server {
