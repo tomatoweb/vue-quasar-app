@@ -10,18 +10,13 @@
       </q-toolbar>
     </q-header>
     <q-drawer class="shadow-6" v-model="leftDrawerOpen" show-if-above bordered>
+      <q-btn dense round flat class="mobileMenuBtn" icon="close" aria-label="Menu" @click="toggleLeftDrawer" />
       <q-list>
         <q-item-label header class="column items-center bg-grey-6">
           <div>
-            <a href="https://vitejs.dev" target="_blank">
               <img src="/vite.svg" class="logo" alt="Vite logo" />
-            </a>
-            <a href="https://vuejs.org/" target="_blank">
               <img src="/vue.svg" class="logo vue" alt="Vue logo" />
-            </a>
-            <a href="https://vuejs.org/" target="_blank">
               <img src="icons/favicon-128x128.png" class="logo vue" alt="Vue logo" />
-            </a>
           </div>
           <div class="text-h6 text-weight-regular"  style="color:black">Vite + Vue + Quasar</div>
         </q-item-label>
@@ -123,5 +118,9 @@ export default defineComponent({
 
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
+}
+.mobileMenuBtn{
+  position: absolute;
+  right: 0;
 }
 </style>
