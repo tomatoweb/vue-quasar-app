@@ -15,9 +15,20 @@ quasar dev
 ```
 
 
-### Build the app for production
+### Build the app for test vps server (vue.mathiasappelmans.be)
 ```bash
 quasar build
+git add .
+git commit -am "message"
+git push
+
+on server:
+git fetch --all
+git reset --hard origin/master
+Explanation:
+git fetch downloads the latest from remote without trying to merge or rebase anything.
+git reset resets the master branch to what you just fetched. The --hard option changes all the files in your working tree to match the files in origin/master.
+
 
 // the build is in dist/spa
 // the "dist" is in the .gitignore, so it will be pulled on test server.
